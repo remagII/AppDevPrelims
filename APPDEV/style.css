@@ -1,0 +1,297 @@
+/* SPACING
+
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+FONT SIZE
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", serif;
+}
+
+header {
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  display: flex;
+  padding: 3.2rem 4.8rem 3.2rem 4.8rem;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 6.4rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+
+body {
+}
+
+span {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: -1;
+}
+
+#vidBg {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* NAV LIST */
+.main-nav-list {
+  display: flex;
+  gap: 3.2rem;
+  list-style-type: none;
+
+  color: white;
+}
+
+.main-nav-link {
+  padding: 1.6rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.main-nav-link:hover {
+  background-color: #0032a0;
+  border-radius: 1rem;
+}
+
+/* TITLE BOX */
+
+.hero {
+  position: relative;
+}
+
+.container {
+}
+
+.title-box {
+  margin: 22rem auto 12.8rem auto;
+  padding: 6.4rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1.2rem;
+}
+
+/* RIZAL */
+.rizal {
+  max-width: 130rem;
+  margin: auto;
+  margin-top: 50rem;
+  margin-bottom: 12.8rem;
+}
+
+.rizal-title-box {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.title-rizal {
+  font-size: 5.2rem;
+  letter-spacing: 1.2rem;
+  margin-bottom: 3.6rem;
+}
+
+.rizal-box {
+  display: flex;
+  gap: 3.2rem;
+  padding: 1.6rem;
+}
+
+.rizal-pic {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 5%;
+  width: 30rem;
+}
+
+.details-box {
+  padding: 2.4rem;
+  background-color: #ffec99;
+  border-radius: 2%;
+}
+
+.details {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  color: #19180f;
+  margin-bottom: 1.6rem;
+}
+
+/* FAMILY */
+
+.family {
+  margin: 1.6rem auto 6.4rem auto;
+  max-width: 130rem;
+
+  background-color: #fff9e0;
+  padding: 3.6rem;
+  border-radius: 0.5%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+
+.family-box {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 130rem;
+
+  row-gap: 3.2rem;
+}
+
+.span-grid {
+  grid-column: 2 / span 3;
+}
+
+.span-grid2 {
+  grid-column: 1 / span 2;
+}
+
+.img-flex {
+  display: flex;
+  justify-content: center;
+}
+
+/* TRAVELS */
+.travels-box {
+  max-width: 130rem;
+
+  margin: 9rem auto 12.8rem auto;
+}
+
+table {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #fff6cc;
+  padding: 2.4rem;
+  border-radius: 0.5%;
+}
+
+thead {
+  font-size: 2.4rem;
+  font-weight: 500;
+  background-color: #fffbeb;
+}
+
+tbody {
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: #fffbeb;
+}
+
+td,
+th {
+  padding: 1.6rem;
+  border-radius: 1%;
+}
+
+/* WHAT MADE HIM A HERO */
+
+.what-made-him-hero {
+  margin-bottom: 12.8rem;
+}
+
+.novels-box {
+  display: flex;
+  gap: 2.4rem;
+  max-width: 130rem;
+  margin: auto;
+  justify-content: center;
+  gap: 6.4rem;
+}
+
+.novels-box img {
+  width: 40rem;
+  height: 56rem;
+  border-radius: 3% 3% 0 0;
+}
+
+.novel {
+  border-radius: 3%;
+  padding: 0 0 0 2.4;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.1s;
+}
+.novel:hover {
+  transform: translateY(-1.6rem);
+}
+
+.novel-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.details-text {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.details-box-flex {
+  margin: auto;
+  width: 130rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* EXILE AND DEATH */
+
+.death {
+  max-width: 130rem;
+  margin: auto;
+  margin-bottom: 6.4rem;
+}
+
+.death-box {
+  display: flex;
+  background-color: #f03e3e;
+  border-radius: 1rem;
+}
+
+.death-text {
+  display: flex;
+  gap: 2.4rem;
+  margin-right: 2rem;
+}
+
+.death-text img {
+  width: 50%;
+  border-radius: 1rem 0 0 1rem;
+  opacity: 0.8;
+}
+
+.details-death {
+  margin-top: 3.4rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
