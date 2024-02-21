@@ -1,0 +1,451 @@
+/* SPACING
+
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+FONT SIZE
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  display: flex;
+  padding: 3.2rem 4.8rem 3.2rem 4.8rem;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 6.4rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+span {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-btn {
+  display: flex;
+  flex-direction: column;
+  right: 0vw;
+  bottom: 5vh;
+  gap: 0.5rem;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.side-btn-box {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 2rem;
+  align-items: center;
+  opacity: 0.2;
+  transition: all 0.2s;
+}
+
+.side-btn-box:hover {
+  opacity: 1;
+}
+
+.side-btn p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.top-link {
+  margin-left: 1.2rem;
+  grid-column: 1 / span 2;
+  opacity: 0.3;
+  transition: all 0.2s;
+}
+
+.side-btn-link {
+  margin: auto;
+  width: 1.6rem;
+  background-color: white;
+  padding: 1rem;
+  color: black;
+  border-radius: 50%;
+}
+
+.link-btn {
+  width: 1.6rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+  z-index: -1;
+}
+
+#vidBg {
+  position: absolute;
+  min-width: 100vw;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#background {
+  position: fixed;
+  min-width: 100vw;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+/* NAV LIST */
+.main-nav-list {
+  display: flex;
+  gap: 3.2rem;
+  list-style-type: none;
+
+  color: white;
+}
+
+.main-nav-link {
+  padding: 1.6rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.main-nav-link:hover {
+  background-color: #0032a0;
+  border-radius: 1rem;
+}
+
+/* TITLE BOX */
+
+.hero {
+  position: relative;
+}
+
+.title-box {
+  margin: 22rem auto 12.8rem auto;
+  padding: 6.4rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1.2rem;
+}
+
+/* RIZAL */
+.rizal {
+  max-width: 130rem;
+  margin: auto;
+  margin-top: 60rem;
+  margin-bottom: 12.8rem;
+}
+
+.rizal-title-box {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.title-rizal {
+  color: white;
+  font-size: 5.2rem;
+  letter-spacing: 1.2rem;
+  margin: 3.6rem 0rem 4rem 0rem;
+}
+
+.rizal-box {
+  display: flex;
+  gap: 3.2rem;
+  padding: 1.6rem;
+}
+
+.rizal-pic {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 1.2rem;
+  width: 30rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.details-box {
+  padding: 2.4rem;
+  background-color: #ffec99;
+  border-radius: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.details {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  color: #19180f;
+  margin-bottom: 1.6rem;
+}
+
+/* FAMILY */
+
+.family {
+  margin: 1.6rem auto 6.4rem auto;
+  max-width: 150rem;
+
+  padding: 3.6rem 3.6rem 12.8rem 3.6rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.family-box {
+  background-color: #fff9e0c0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+
+  padding: 6.8rem 12.8rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 130rem;
+
+  row-gap: 3.2rem;
+}
+
+.span-grid {
+  grid-column: 2 / span 3;
+}
+
+.span-grid2 {
+  grid-column: 1 / span 2;
+}
+
+.img-flex {
+  display: flex;
+  justify-content: center;
+}
+
+/* GALLERY */
+
+.gallery-background {
+  box-shadow: rgba(54, 54, 54, 0.2) 0px 8px 24px;
+  overflow: hidden;
+  padding: 3.2rem;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 2px;
+  background-color: #00000074;
+  user-select: none;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.gallery-img {
+  width: 24rem;
+  height: 48rem;
+  object-fit: cover;
+  object-position: 100% 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  user-select: none;
+}
+
+.gallery-box {
+  position: relative;
+  height: 100%;
+}
+
+.img-content {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.img-content p {
+  text-align: center;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+  user-select: none;
+}
+
+.img-content:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* TRAVELS */
+.travels-box {
+  max-width: 130rem;
+
+  margin: 9rem auto 12.8rem auto;
+}
+
+table {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #fff6cc;
+  padding: 2.4rem;
+  border-radius: 0.5%;
+}
+
+thead {
+  font-size: 2.4rem;
+  font-weight: 500;
+  background-color: #fffbeb;
+}
+
+tbody {
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: #fffbeb;
+}
+
+td,
+th {
+  padding: 1.6rem;
+  border-radius: 1%;
+}
+
+/* WHAT MADE HIM A HERO */
+
+.what-made-him-hero {
+  margin-bottom: 12.8rem;
+}
+
+.novels-box {
+  display: flex;
+  gap: 2.4rem;
+  max-width: 130rem;
+  margin: auto;
+  justify-content: center;
+  gap: 6.4rem;
+}
+
+.novels-box img {
+  width: 40rem;
+  height: 56rem;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.novel {
+  border-radius: 2rem;
+  padding: 0 0 0 2.4;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.1s;
+  background-color: #fffbebd8;
+}
+
+.novel:hover {
+  transform: translateY(-1.6rem);
+}
+
+.novel-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.novel-details span {
+  display: flex;
+  justify-content: center;
+}
+
+.details-text {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.details-box-flex {
+  margin: auto;
+  max-width: 130rem;
+  display: flex;
+  padding: 2.4rem 2.4rem 0rem 2.4rem;
+  justify-content: center;
+  background-color: #fffbebd8;
+  margin-bottom: 6.4rem;
+  border-radius: 1rem;
+}
+
+/* EXILE AND DEATH */
+
+.death {
+  max-width: 130rem;
+  margin: auto;
+  margin-bottom: 6.4rem;
+}
+
+.death-box {
+  display: flex;
+  background-color: #f03e3ed3;
+  border-radius: 1rem;
+}
+
+.death-text {
+  display: flex;
+  gap: 2.4rem;
+  margin-right: 2rem;
+}
+
+.death-text img {
+  width: 50%;
+  border-radius: 1rem 0 0 1rem;
+  opacity: 0.8;
+}
+
+.details-death {
+  margin-top: 3.4rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #fcd8d8;
+}
