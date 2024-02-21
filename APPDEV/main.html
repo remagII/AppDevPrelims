@@ -13,6 +13,7 @@
     <title>APPDEV</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
   </head>
   <body>
     <header class="header">
@@ -21,7 +22,7 @@
           <li>
             <a href="#rizal-anchor" class="main-nav-link">Who was Rizal</a>
           </li>
-          <li><a href="#family-anchor" class="main-nav-link">Parents</a></li>
+          <li><a href="#family-anchor" class="main-nav-link">Family</a></li>
           <li><a href="#travels-anchor" class="main-nav-link">Travels</a></li>
           <li>
             <a href="#hero-anchor" class="main-nav-link">Why is he a hero</a>
@@ -45,6 +46,128 @@
         </div>
       </div>
     </section>
+
+    <img id="background" src="Background.jpg" />
+
+    <div class="side-btn active">
+      <div class="side-btn-box">
+        <a href="#" class="side-btn-link"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="top-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="side-btn-box">
+        <a href="#rizal-anchor" class="side-btn-link"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="link-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </a>
+        <p>Who was rizal</p>
+      </div>
+
+      <div class="side-btn-box">
+        <a href="#family-anchor" class="side-btn-link"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="link-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </a>
+        <p>Family</p>
+      </div>
+
+      <div class="side-btn-box">
+        <a href="#travels-anchor" class="side-btn-link"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="link-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </a>
+        <p>Travels</p>
+      </div>
+
+      <div class="side-btn-box">
+        <a href="#hero-anchor" class="side-btn-link"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="link-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </a>
+        <p>What made him a hero</p>
+      </div>
+
+      <div class="side-btn-box">
+        <a href="#death-anchor" class="side-btn-link"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="link-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </a>
+        <p>Death</p>
+      </div>
+    </div>
 
     <section class="rizal" id="rizal-anchor">
       <div class="rizal-title-box">
@@ -128,17 +251,157 @@
       </div>
     </section>
 
+    <div class="rizal-title-box">
+      <h1 class="title-rizal">SIBLINGS</h1>
+    </div>
+
+    <div class="gallery-background">
+      <div
+        class="gallery"
+        data-mouse-down-at="0"
+        data-prev-percentage="0"
+        draggable="false"
+      >
+        <div class="gallery-box">
+          <img class="gallery-img" src="saturnina.jpg" draggable="false" />
+          <div class="img-content">
+            <p><span>Saturnina Hidalgo</span></p>
+            <p>
+              Saturnina Mercado Rizal Hidalgo was born in 1818 and was the
+              eldest sister of Jose Rizal. She had five children together with
+              husband Manuel T. Hidalgo and died the same year as her mother in
+              1913.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <img class="gallery-img" src="paciano.jfif" draggable="false" />
+          <div class="img-content">
+            <p><span>Paciano Rizal</span></p>
+            <p>
+              General Paciano Mercado Rizal aka "Lolo Ciano" was the only
+              brother of Jose Rizal. He was born in 1851 and studied in Binan
+              later attending school at the Colegio de San Jose in Manila. After
+              the execution of his brother, he joined in the Philippine
+              Revolution where he rose up to the ranks of a General. He later
+              married Severina Decena of Los Banos and had two children of which
+              one died at an early age. Paciano passed away in 1930.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <img class="gallery-img" src="narcisa.jpg" draggable="false" />
+          <div class="img-content">
+            <p><span>Narcisa Lopez</span></p>
+            <p>
+              Narcisa Rizal Lopez was born in 1852 and was the one who found the
+              unmarked grave of her brother, Jose in the abandoned Old Paco
+              Cemetery. Narcisa married Antonio Lopez who was a teacher and
+              musician from Morong, Rizal. She died in 1938.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <img class="gallery-img" src="olympia.jpg" draggable="false" />
+          <div class="img-content">
+            <p><span>Olympia Ubaldo</span></p>
+            <p>
+              Olympia Rizal Ubaldo was born in 1855. She married Silvestre
+              Ubaldo and together they had three children. She died in 1887 when
+              she was only 32 years old.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <img class="gallery-img" src="lucia.jpg" draggable="false" />
+          <div class="img-content">
+            <p><span>Lucia Herbosa</span></p>
+            <p>
+              Lucia Rizal Herbosa was born in 1857. She married Mariano Herbosa
+              and had 5 children together. In 1889 Mariano died due to an
+              epidemic but was denied a Christian burial. This was due to the
+              fact that he was the brother in law of Jose Rizal. This showed the
+              beginning of the persecution of the Rizal family by Spanish
+              friars. Lucia died in 1919.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <img class="gallery-img" src="maria.jpg" draggable="false" />
+          <div class="img-content">
+            <p><span>Maria Cruz</span></p>
+            <p>
+              Maria Cruz Rizal was born in 1855. She married Daniel Faustino
+              Cruz of Binan, Laguna and together they had 5 children. Mauricio
+              Cruz, one of Maria's children became a student of Jose Rizal in
+              Dapitan and was known to be one of his uncle's favorites. Maria
+              was a known recipient of many od Jose's letters during his
+              lifetime. Maria died in 1945.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <img class="gallery-img" src="josefa.jpg" draggable="false" />
+          <div class="img-content">
+            <p><span>Josefa Rizal</span></p>
+            <p>
+              Josefa Rizal was born in 1865. She was unmarried lived together
+              with sister Trinidad until death. Josefa was said to have suffered
+              from epilepsy. She died in 1945.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <img class="gallery-img" src="trinidad.jpg" draggable="false" />
+          <div class="img-content">
+            <p><span>Trinidad Rizal</span></p>
+            <p>
+              Trinidad Rizal was born in 1868. She remained unmarried and lived
+              together with her sister Josefa. Trinidad was the one who recieved
+              an alcohol lamp from brother Jose, in which he secretly hid the
+              "Last Farewell" better known as "Mi Ultimos Adios," a poem Rizal
+              wrote on the eve of his death in 1896. Trinidad died in 1951,
+              outliving all her siblings.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <img class="gallery-img" src="soledad.jfif" draggable="false" />
+          <div class="img-content">
+            <p><span>Soledad Quintero</span></p>
+            <p>
+              Soledad Rizal Quintero was born in 1870 making her the youngest of
+              the Rizal siblings. She married Pantaleon Quintero and together
+              they had 5 children. Soledad died in 1929.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <img class="gallery-img" src="concepcion.jpeg" draggable="false" />
+          <div class="img-content">
+            <p><span>Concepcion Rizal</span></p>
+            <p>
+              Concepcion Rizal was born in 1862. Concepcion did not live very
+              long as she died at the age of 3 in 1865.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="travels" id="travels-anchor">
       <div class="travels-box">
         <div class="rizal-title-box">
           <h1 class="title-rizal">TRAVELS</h1>
-        </div>
-
-        <div class="rizal-title-box">
-          <p class="details">
-            Throughout his life Rizal travelled the world in pursuit of
-            education
-          </p>
         </div>
 
         <table>
@@ -330,4 +593,5 @@
       </div>
     </section>
   </body>
+  <script src="script.js"></script>
 </html>
